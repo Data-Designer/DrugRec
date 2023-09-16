@@ -66,7 +66,9 @@ In accordance with the requirements of the **PhysioNet Clinical Databases**, we 
 
 ```powershell
 # unzip all files into the data directory
+cd /root/DrugRec/data
 python preprocess.py # preprocess
+cd /root/DrugRec/src
 python main.py # main file
 ```
 
