@@ -1,9 +1,9 @@
-<h1 align="center"> PRECISION DRUG RECOMMENDATION EMPOWERED
-BY FINE-GRAINED EXPLORATION OF MOTIF RELATIONSHIPS </h1>
+<h1 align="center"> Enhancing Precision Drug Recommendations via In-depth Exploration of Motif Relationships </h1>
+
 
 ## About Our Work
 
-Update: 2023/11/29: We have created a repository for the paper titled *via In-depth Exploration of Motif Relationships*, which has been submitted to the *IEEE Transactions on Knowledge and Data Engineering (TKDE)*. In this repository, we offer the original sample datasets, preprocessing scripts, and algorithm files to showcase the reproducibility of our work.
+Update: 2023/11/29: We have created a repository for the paper titled *Enhancing Precision Drug Recommendations via In-depth Exploration of Motif Relationships*, which has been submitted to the *IEEE Transactions on Knowledge and Data Engineering (TKDE)*. In this repository, we offer the original sample datasets, preprocessing scripts, and algorithm files to showcase the reproducibility of our work.
 
 ![image-20230916163855435](https://s2.loli.net/2023/09/16/NfG4LQew7V53UEM.png)
 
