@@ -282,17 +282,31 @@ class DrugRec(nn.Module):
         # ddi
         self.ddi_matrix = ddi_matrix
 
+        self.drug_emb_id = nn.Embedding(self.drug_smile.shape[0], self.emb_dim)
+
+
         self.init_weights()
 
 
     def init_weights(self):
         """Initialize weights."""
         initrange = 0.1
-        nn.init.xavier_uniform_(self.diagnose_emb.weight)
-        nn.init.xavier_uniform_(self.procedure_emb.weight)
-        nn.init.xavier_uniform_(self.sub_embed.weight)
-        self.drug_emb_id = nn.Embedding(self.drug_smile.shape[0], self.emb_dim)
-        nn.init.xavier_uniform_(self.drug_emb_id.weight)
+        # nn.init.xavier_uniform_(self.query.weight)
+        # nn.init.xavier_uniform_(self.diagnose_emb.weight)
+        # nn.init.xavier_uniform_(self.procedure_emb.weight)
+        # nn.init.xavier_uniform_(self.sub_embed.weight)
+        # nn.init.xavier_uniform_(self.drug_emb_id.weight)
+        def _init_weights(m):
+            if isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight)
+                if isinstance(m, nn.Linear) and m.bias is not None:
+                    nn.init.constant_(m.bias, 0)
+            elif isinstance(m, nn.LayerNorm):
+                nn.init.constant_(m.bias, 0)
+                nn.init.constant_(m.weight, 1.0)
+            elif isinstance(m, nn.Embedding):
+                nn.init.xavier_uniform_(m.weight)
+        self.apply(_init_weights)
 
     def generateEpsilon(self):
         return torch.randn(size=(self.emb_dim, )).to(self.device)
