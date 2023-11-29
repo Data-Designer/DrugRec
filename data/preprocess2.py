@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2023/5/29 13:55
-# @Author  : Jack Zhao
+# @Author  : Anonymous
 # @Site    : 
 # @File    : preprocess.py
 # @Software: PyCharm
