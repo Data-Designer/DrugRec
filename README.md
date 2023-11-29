@@ -3,7 +3,7 @@ BY FINE-GRAINED EXPLORATION OF MOTIF RELATIONSHIPS </h1>
 
 ## About Our Work
 
-Update: 2023/09/16: We have created a repository for the paper titled *PRECISION DRUG RECOMMENDATION EMPOWERED BY FINE-GRAINED EXPLORATION OF MOTIF RELATIONSHIPS*, which has been submitted to the *The Twelfth International Conference on Learning Representations (ICLR2024)*. In this repository, we offer the original sample datasets, preprocessing scripts, and algorithm files to showcase the reproducibility of our work.
+Update: 2023/11/29: We have created a repository for the paper titled *via In-depth Exploration of Motif Relationships*, which has been submitted to the *IEEE Transactions on Knowledge and Data Engineering (TKDE)*. In this repository, we offer the original sample datasets, preprocessing scripts, and algorithm files to showcase the reproducibility of our work.
 
 ![image-20230916163855435](https://s2.loli.net/2023/09/16/NfG4LQew7V53UEM.png)
 
@@ -74,4 +74,4 @@ python main.py # main file
 
 ## Contact
 
-In order to adhere to the ==double-blind review policy==, we will update the contact information and corresponding issue links after the review process is completed.
+We will update the contact information and corresponding issue links after the review process is completed.
