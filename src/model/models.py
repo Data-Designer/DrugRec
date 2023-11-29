@@ -307,6 +307,7 @@ class DrugRec(nn.Module):
             elif isinstance(m, nn.Embedding):
                 nn.init.xavier_uniform_(m.weight)
         self.apply(_init_weights)
+        
 
     def generateEpsilon(self):
         return torch.randn(size=(self.emb_dim, )).to(self.device)
